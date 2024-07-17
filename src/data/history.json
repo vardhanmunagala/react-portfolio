@@ -1,0 +1,18 @@
+[
+  {
+    "role": "Software Developer",
+    "organisation": "University of Central Florida",
+    "startDate": "June, 2023",
+    "endDate": "May, 2024",
+    "experiences": ["Created user-friendy websites using modern web design techniques.", "Developed custom website functionalities.", "Integrated SQL-driven features for dynamic content management."],
+    "imageSrc": "history/ucf_pegasus.png"
+  },
+  {
+    "role": "Software Engineer",
+    "organisation": "Cognizant Technology Solutions",
+    "startDate": "Aug, 2020",
+    "endDate": "July, 2022",
+    "experiences": ["Developed web applications and implemented full-stack solutions.", "Streamlined workflows, optimized database queries, and managed cloud infrastructure.", "Contributed to increased team productivity within Agile environments."],
+    "imageSrc": "history/cognizant.png"
+  }
+]

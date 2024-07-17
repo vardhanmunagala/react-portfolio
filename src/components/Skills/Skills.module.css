@@ -1,0 +1,95 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 5%;
+  margin-right: 5%;
+  z-index: 1;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+  justify-content: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.skillImageContainer {
+  background-color: var(--color-bg);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.skillImageContainer img {
+  width: 75px;
+}
+
+.skill p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+.topBlur,
+.bottomBlur {
+  position: absolute;
+  width: 40vw; /* Reduce size */
+  height: 40vw; /* Reduce size */
+  min-width: 300px;
+  top: -50px; /* Adjust position */
+  border-radius: 50%;
+  background: rgba(140, 43, 50, 0.7); /* Retro Burgundy with opacity */
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.5; /* Reduce opacity */
+}
+
+.topBlur {
+  left: -20vw; /* Adjust position */
+}
+
+.bottomBlur {
+  right: -20vw; /* Adjust position */
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

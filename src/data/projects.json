@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Market Basket Analysis",
+    "imageSrc": "projects/mba.png",
+    "description": "In this project, I conducted market basket analysis using the Online Retail dataset. Through data preprocessing and analysis, I identified patterns and associations between items frequently bought together. Leveraging this insight, I created a recommendation model to propose supplementary items per transaction, aiming to enhance the shopping experience and increase overall sales.",
+    "skills": ["Python", "Pandas", "NumPy"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "ToDo Application",
+    "imageSrc": "projects/todo_application.png",
+    "description": "I crafted a user-friendly To-Do Application using Flask, allowing seamless task management. With HTML, CSS, and JavaScript, I ensured an intuitive interface and dynamic functionality. Utilizing SQLite for secure data storage, the app offers robust task management capabilities. Containerized the app with Docker for streamlined deployment and consistent performance.",
+    "skills": ["Flask", "JavaScript", "Docker"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Online Book Store",
+    "imageSrc": "projects/online_book_store.png",
+    "description": "I created an Online Book Store using Spring Boot, React, and MySQL. ava and Spring Boot managed backend tasks like user authentication, book management, and order processing, seamlessly integrated with a user-friendly React frontend. The dynamic frontend facilitated easy browsing, searching, and purchasing of books. MySQL ensured secure data storage and efficient retrieval.",
+    "skills": ["React", "SpringBoot", "MySQL"]
+  },
+  {
+    "title": "Sales Performance Dashboard",
+    "imageSrc": "projects/sales_performance_dashboard.png",
+    "description": "I built a dynamic Car Sales Performance Dashboard in Tableau, featuring interactive charts for real-time updates on sales trends, revenue figures, and regional performance. Integrated with data from various sources, including CRM systems and sales databases, the dashboard offers concise insights and serves as a centralized hub for monitoring sales activities.",
+    "skills": ["Tableau", "Excel"]
+  },
+  {
+    "title": "Olympic Game Management",
+    "imageSrc": "projects/olympics.png",
+    "description": "I built an Olympic Games Management data warehouse using AWS services like S3, Redshift, RDS, and QuickSight, integrating data from the 2016 Rio Olympics. Employing SQL queries, I extracted insights into Olympic events, results, and athlete performance. The system allows thorough data analysis and reporting, aiding event organizers and stakeholders in informed decision-making.",
+    "skills": ["Sql", "AWS S3", "Redshift"]
+  },
+  {
+    "title": "Walmart Sales Prediction",
+    "imageSrc": "projects/walmart.png",
+    "description": "In this project, predictive machine learning models were crafted to accurately forecast Walmart sales. The process involved thorough data analysis, guiding the development and refinement of highly effective predictive models. The resulting models exhibited exceptional accuracy, offering valuable forecasts to optimize sales strategies and inventory management.",
+    "skills": ["Python", "Machine Learning"]
+  }
+]
