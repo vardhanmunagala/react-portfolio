@@ -9,6 +9,14 @@
     "imageSrc": "skills/java.png"
   },
   {
+    "title": "C#",
+    "imageSrc": "skills/c-sharp.png"
+  },
+  {
+    "title": "C++",
+    "imageSrc": "skills/c-.png"
+  },
+  {
     "title": "HTML",
     "imageSrc": "skills/html.png"
   },
@@ -21,8 +29,20 @@
     "imageSrc": "skills/javascript.png"
   },
   {
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.png"
+  },  
+  {
     "title": "React",
     "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Angular",
+    "imageSrc": "skills/angular.png"
+  },
+  {
+    "title": "Vue",
+    "imageSrc": "skills/vue.png"
   },
   {
     "title": "Node",
@@ -49,12 +69,40 @@
     "imageSrc": "skills/postgresql.png"
   },
   {
+    "title": "Oracle",
+    "imageSrc": "skills/oracle.png"
+  },
+  {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
   },
   {
+    "title": "SQL Server",
+    "imageSrc": "skills/sql_server.png"
+  },
+  {
+    "title": "Redis",
+    "imageSrc": "skills/redis.png"
+  },
+  {
+    "title": "Cassandra",
+    "imageSrc": "skills/cassandra.png"
+  },
+  {
+    "title": "Redshift",
+    "imageSrc": "skills/redshift.png"
+  },
+  {
+    "title": "Airflow",
+    "imageSrc": "skills/airflow.png"
+  },
+  {
     "title": "AWS",
     "imageSrc": "skills/aws.png"
+  },
+  {
+    "title": "Azure",
+    "imageSrc": "skills/azure.png"
   },
   {
     "title": "Docker",
@@ -63,6 +111,18 @@
   {
     "title": "Kubernetes",
     "imageSrc": "skills/kubernetes.png"
+  },
+  {
+    "title": "Terraform",
+    "imageSrc": "skills/terraform.png"
+  },
+  {
+    "title": "Helm",
+    "imageSrc": "skills/helm.png"
+  },
+  {
+    "title": "Jenkins",
+    "imageSrc": "skills/jenkins.png"
   },
   {
     "title": "VS Code",
@@ -75,6 +135,18 @@
   {
     "title": "Git",
     "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "Kafka",
+    "imageSrc": "skills/kafka.png"
+  },
+  {
+    "title": "Spark",
+    "imageSrc": "skills/spark.png"
+  },
+  {
+    "title": "Grafana",
+    "imageSrc": "skills/grafana.png"
   },
   {
     "title": "Tableau",

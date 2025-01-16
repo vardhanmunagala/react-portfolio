@@ -1,12 +1,20 @@
 :root {
   /* Colors */
-  --color-text: #fff;
-  --color-primary: #5d5c31; 
-  --color-secondary: #8c2b32;
-  --color-dark: #2c0c0f;
-  --color-bg: rgba(140, 43, 50, 0.7);
+  --color-primary: #F8F9FA;   /* Very light gray for the background */
+  --color-secondary: #2C3E50; /* Dark blue-gray for sections */
+  --color-accent: #C0392B;     /* Purple for buttons and highlights */
+  --color-text1: #ffffff;       /* Dark blue-gray for text */
+  --color-text2: #000000;       /* Dark blue-gray for text */
 
   /* Fonts */
   --font-roboto: "Roboto";
   --font-impact: "Impact";
 }
+
+
+
+
+
+
+
+

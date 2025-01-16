@@ -19,6 +19,7 @@ export const Education = () => {
             <h3>University of Central Florida</h3>
             <p>MS in Computer Science</p>
             <p>Aug, 2022 - May, 2024</p>
+            <p>GPA: 4.0/4.0</p>
             <p>
               Advanced Data Structures, Machine Learning, Computer Vision, Data Analytics
             </p>
@@ -34,6 +35,7 @@ export const Education = () => {
             <h3>R.V.R. & J.C. College of Engineering</h3>
             <p>B.Tech in Computer Science</p>
             <p>July, 2017 - July, 2021</p>
+            <p>GPA: 3.8/4.0</p>
             <p>
               Programming, Databases, Computer Networks, Data Structures & Algorithms
             </p>

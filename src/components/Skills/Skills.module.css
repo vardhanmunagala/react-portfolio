@@ -1,41 +1,59 @@
 @import "../../vars.css";
 
 .container {
+  color: var(--color-text2);
   position: relative;
-  color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 5%;
-  margin-right: 5%;
-  z-index: 1;
+  margin-top: 0;
+  z-index: auto;
+  background-color: var(--color-primary);
+  padding-bottom: 50px;
 }
 
 .title {
-  color: var(--color-text);
+  color: var(--color-text2);
   font-size: 35px;
-  font-weight: 700;
+  font-weight: bolder;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--color-primary);
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  margin-top: 14px;
+.skillsContainer { /* New class for the border */
+  border: 6px solid var(--color-secondary); /* Adjust border color */
+  border-radius: 8px; /* Optional: for rounded corners */
+  padding: 10px; /* Optional: add space inside the border */
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.skills {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
-  justify-content: center;
+.skillsMarquee {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.skillsMarqueeContent {
+  display: inline-flex;
+  animation: scroll 90s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .skill {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 11px;
+  margin: 0 20px; /* Adjust space between skills */
 }
 
 .skillImageContainer {
@@ -56,40 +74,47 @@
   font-size: 25px;
   font-family: var(--font-roboto);
   font-weight: 500;
-}
-
-.topBlur,
-.bottomBlur {
-  position: absolute;
-  width: 40vw; /* Reduce size */
-  height: 40vw; /* Reduce size */
-  min-width: 300px;
-  top: -50px; /* Adjust position */
-  border-radius: 50%;
-  background: rgba(140, 43, 50, 0.7); /* Retro Burgundy with opacity */
-  filter: blur(100px);
-  z-index: -1;
-  opacity: 0.5; /* Reduce opacity */
-}
-
-.topBlur {
-  left: -20vw; /* Adjust position */
-}
-
-.bottomBlur {
-  right: -20vw; /* Adjust position */
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+
+  .title {
+    font-size: 25px; /* Reduce title size */
+    padding: 8px; /* Adjust padding */
   }
 
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  .skillsContainer {
+    padding: 5px; /* Reduce padding inside the container */
+    margin-left: 2%; /* Narrow the side margins */
+    margin-right: 2%;
+  }
+
+  .skillsMarquee {
+    margin-top: 15px; /* Adjust margin above the marquee */
+  }
+
+  .skillsMarqueeContent {
+    animation-duration: 120s; /* Slow down animation for better readability */
+  }
+
+  .skillImageContainer {
+    width: 90px; /* Resize the skill container */
+    height: 90px;
+  }
+
+  .skillImageContainer img {
+    width: 55px; /* Resize the skill image */
+  }
+
+  .skill p {
+    font-size: 18px; /* Reduce skill text size */
+    text-align: center; /* Center-align skill labels */
+  }
+
+  .skill {
+    gap: 8px; /* Adjust spacing between image and text */
+    margin: 0 10px; /* Reduce space between skills */
   }
 }
+

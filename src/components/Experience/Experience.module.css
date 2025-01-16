@@ -1,103 +1,162 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 5%;
-  margin-right: 5%;
+  color: var(--color-text1);
   position: relative;
-  z-index: 1;
+  margin-top: 0;
+  z-index: auto;
+  background-color: var(--color-secondary);
+  padding-bottom: 50px;
 }
 
 .title {
-  color: var(--color-text);
+  color: var(--color-text1);
   font-size: 35px;
-  font-weight: 700;
+  font-weight: bolder;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--color-secondary);
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 14px;
-}
 
-.history {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.historyItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: var(--color-bg);
-  border-radius: 15px;
-  padding: 24px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.historyItem img {
+.icon {
   width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
 }
 
-.historyItemDetails {
-  font-family: var(--font-roboto);
+.verticalTimelineElement {
+  padding: 15px; /* Add padding for better spacing */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between timeline elements */
 }
 
-.historyItemDetails h3 {
-  font-size: 30px;
+.date {
+  font-size: 24px;
   font-weight: bold;
+  color: var(--color-text1); /* Color for date, customize as needed */
+  margin-bottom: 10px; /* Space below the date */
 }
 
-.historyItemDetails p {
-  font-size: 20px;
+/* Styling for the title */
+.verticalTimelineElementTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: var(--color-accent); /* Background color for title, customize as needed */
+  padding: 10px; /* Padding around the title */
+  border-radius: 5px; /* Rounded corners for the title background */
+  color: var(--color-text2); /* Text color for title */
+  cursor: pointer;
 }
 
-.historyItemDetails ul {
-  margin-top: 6px;
+/* Styling for the experience list */
+.experienceDetails {
+  margin-top: 10px;
   list-style-position: inside;
-  font-size: 20px;
+  font-size: 18px;
   list-style-type: disc;
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: max-height 0.3s ease-in-out; /* Smooth transition */
+  overflow: hidden; /* Prevent overflow when collapsed */
+  max-width: 100%; /* Adjust as needed */
+  
+}
+
+.experienceDetails p {
+  margin-bottom: 5px; /* Space between paragraphs */
+  color: var(--color-text2); /* Customize text color as needed */
+  text-align: justify; /* Justify text */
+  
+}
+
+
+.jobTitle {
+   /* Size for job title */
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+  color: var(--color-text2);
   font-style: italic;
 }
 
-.topBlur,
-.bottomBlur {
-  position: absolute;
-  width: 40vw;
-  height: 40vw;
-  min-width: 300px;
-  top: -50px;
-  border-radius: 50%;
-  background: rgba(140, 43, 50, 0.7);
-  filter: blur(100px);
-  z-index: -1;
-  opacity: 0.5;
+.orgName {
+  font-weight: bolder; /* Adjust weight for emphasis */
+  margin: 0; /* Remove default margin */
+  color: var(--color-text1) !important; /* Customize the color if desired */
+  
 }
 
-.topBlur {
-  left: -20vw;
-}
-
-.bottomBlur {
-  right: -20vw;
-}
 
 @media screen and (max-width: 830px) {
-  .content {
-    align-items: center;
-    gap: 34px;
+
+  .container {
+    padding: 40px;
   }
 
-  .history {
-    width: 100%;
-    gap: 9px;
+  .title {
+    font-size: 25px; /* Slightly smaller font size */
+    margin-bottom: 20px; /* Keep the same spacing */
+    text-align: center; /* Retain alignment */
+  }
+
+  .icon {
+    width: 40px; /* Slightly smaller size */
+    height: 40px;
+  }
+
+  .verticalTimelineElement {
+    padding: 15px; /* Retain spacing for consistency */
+    margin-bottom: 15px; /* Adjust spacing between elements */
+    border-radius: 8px; /* Keep the same rounded corners */
+  }
+
+  .date {
+    font-size: 14px; /* Slightly smaller for better fit */
+    color: var(--color-text1); /* Ensure contrast with background */
+    margin-bottom: 8px; /* Adjust spacing below the date */
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    transform: translateX(-25%);
+    top: -25px;
+    left: 5%;
+  }
+
+  .verticalTimelineElementTitle {
+    font-size: 20px; /* Slightly smaller font */
+    font-weight: bold; /* Retain bold emphasis */
+    padding: 8px; /* Adjust padding slightly */
+    background-color: var(--color-accent); /* Keep background consistent */
+    border-radius: 5px; /* Retain rounded corners */
+  }
+
+  .experienceDetails {
+    font-size: 16px; /* Slightly smaller font size */
+    margin-left: 10px; /* Keep margin consistent */
+    list-style-type: disc; /* Maintain style */
+    
+  }
+
+  .experienceDetails p {
+    margin-bottom: 5px; /* Retain space between list items */
+  }
+
+  .jobTitle {
+    font-size: 16px; /* Slightly smaller font */
+    font-weight: bold;
+  }
+
+  .orgName {
+    font-size: 14px; /* Slightly smaller font */
+    font-weight: 500;
+    font-style: italic;
+    color: var(--color-text1); /* Maintain the color */
   }
 }

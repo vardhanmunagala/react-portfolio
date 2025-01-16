@@ -1,18 +1,34 @@
 [
   {
+    "role": "Software Engineer",
+    "organisation": "Sherwin Williams",
+    "startDate": "July, 2024",
+    "endDate": "Present",
+    "experiences": ["As a Software Engineer at Sherwin Williams, I played an integral role in developing an advanced Inventory Management System that enhanced real-time tracking and reduced stock discrepancies. I worked on integrating the system with external platforms to ensure real-time updates on inventory levels and sales orders. To streamline workflows, I developed automation scripts that improved data management processes, contributing to greater efficiency across the team. I also focused on building a user-friendly interface that drove user engagement and improved the overall inventory management experience. In addition to enhancing data security through secure authentication, I ensured the system’s stability and smooth updates by managing deployment pipelines and overseeing continuous integration and delivery processes."],
+    "imageSrc": "history/SW.png"
+  },
+  {
     "role": "Software Developer",
     "organisation": "University of Central Florida",
     "startDate": "June, 2023",
     "endDate": "May, 2024",
-    "experiences": ["Created user-friendy websites using modern web design techniques.", "Developed custom website functionalities.", "Integrated SQL-driven features for dynamic content management."],
+    "experiences": ["As a Software Developer at the University of Central Florida, I contributed to the development of a campus E-Commerce platform aimed at enhancing the user experience for students. I focused on creating seamless workflows for product browsing and order processing, ensuring smooth and secure transactions across various channels. Additionally, I designed an intuitive and accessible user interface that encouraged greater engagement. Throughout the project, I worked closely with an Agile team to deliver new features on time and maintained high code quality through rigorous testing, ultimately delivering a polished and reliable platform."],
     "imageSrc": "history/ucf_pegasus.png"
   },
   {
     "role": "Software Engineer",
     "organisation": "Cognizant Technology Solutions",
-    "startDate": "Aug, 2020",
+    "startDate": "July, 2020",
     "endDate": "July, 2022",
-    "experiences": ["Developed web applications and implemented full-stack solutions.", "Streamlined workflows, optimized database queries, and managed cloud infrastructure.", "Contributed to increased team productivity within Agile environments."],
+    "experiences": ["During my time as a Software Engineer at Cognizant Technology Solutions, I had the opportunity to develop and deliver high-quality software applications that directly aligned with business goals. I worked closely with cross-functional teams in an Agile environment, ensuring efficient collaboration and timely project delivery. My role involved writing clean, reliable code and performing thorough testing, which led to a significant reduction in post-release bugs and improvements in overall system performance. I also took ownership of system maintenance and optimization, enhancing uptime and ensuring smooth production operations. By designing user-friendly interfaces and fine-tuning complex data queries, I contributed to higher user engagement and better data handling. Additionally, I managed automated deployment pipelines, streamlining releases and ensuring a seamless user experience from development to production."],
     "imageSrc": "history/cognizant.png"
+  },
+  {
+    "role": "Research Intern",
+    "organisation": "Bennett University",
+    "startDate": "Apr, 2020",
+    "endDate": "July, 2020",
+    "experiences": ["In my research role, I focused on exploring machine learning and computer vision algorithms to advance the field of image processing. I designed and implemented models to convert standard RGB images into hyperspectral data, significantly improving the accuracy of spectral reconstruction. My work involved analyzing cutting-edge methods, documenting key findings, and preparing detailed technical reports to support ongoing research efforts and contribute to innovation in the field."],
+    "imageSrc": "history/BU.png"
   }
 ]

@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
+  padding: 20px;
   z-index: 2;
   background-color: var(--color-secondary);
 }
@@ -14,16 +14,20 @@
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-text1);
 }
 
-
 .menuBtn {
-  display: none;
+  display: none; /* Initially hidden */
+  cursor: pointer;
+  z-index: 4; /* Ensure it's above other elements */
+  width: 30px; /* Set width for better visibility */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .menu {
   display: flex;
+  align-items: center; /* Center the items vertically */
   margin-right: 20px;
 }
 
@@ -35,7 +39,7 @@
 
 .menuItems a {
   font-size: 30px;
-  color: var(--color-text);
+  color: var(--color-text1);
   text-decoration: none;
   font-weight: bold;
 }
@@ -43,7 +47,7 @@
 .menuItems a:hover {
   text-decoration: none;
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-text2);
   border-radius: 100px;
   font-size: 30px;
   font-weight: bold;
@@ -53,44 +57,38 @@
 
 @media screen and (max-width: 830px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 10px; /* Adjust padding for mobile */
   }
 
   .menu {
-    position: fixed;
-    right: 0;
-    margin-right: 5%;
+    position: relative; /* Change to relative for better layout */
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end; /* Align items to the right */
     gap: 11px;
     z-index: 3;
   }
 
   .menuBtn {
-    display: block;
-    cursor: pointer;
+    display: block; /* Show hamburger icon on mobile */
   }
 
   .menuItems {
-    display: none;
+    display: none; /* Hide menu items initially */
+    position: absolute; /* Position absolutely to avoid expanding navbar */
+    right: 0; /* Align to the right of the navbar */
+    top: 100%; /* Position below the navbar */
     flex-direction: column;
     align-items: center;
     gap: 13px;
     border-radius: 10px;
-    background: rgb(140, 43, 50);
-    background: linear-gradient(
-      0deg,
-      rgba(140, 43, 50, 0.2) 0%,
-      rgba(140, 43, 50, 1) 100%
-    );
+    background: rgba(44, 62, 80, 0.8); /* Darker background for visibility */
+
     padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease; /* Optional: smooth transition */
   }
-  
 
   .menuOpen {
-    display: flex;
-    z-index: 1;
+    display: flex; /* Show menu items when opened */
   }
 }

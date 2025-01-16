@@ -1,113 +1,74 @@
-@import "../../vars.css";
-
 .container {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 49px;
-  z-index: 1;
-  margin-left: 5%;
-  margin-right: 5%;
+  justify-content: center;
+  padding: 50px; /* Adjust as needed */
+  min-height: 90vh; /* Set a minimum height for the container */
+  background-color: var(--color-primary);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0; /* Ensure no bottom margin */
 }
 
+
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: var(--color-text);
-  z-index: 1;
+  z-index: 1; /* Ensure text is above background */
+  text-align: center; /* Center-align text */
 }
 
 .title {
-  font-size: 65px;
-  text-align: match-parent;
-  margin-bottom: 33px;
-  font-family: var(--font-impact);
-  letter-spacing: 5px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: var(--color-accent); /* Change text color to white or a contrasting color */
+  font-size: 50px; /* Maintain larger font size */
+  font-weight: bolder; /* Make it bold */
+  margin-bottom: 15px; /* Space between title and description */
 }
 
 .description {
-  font-size: 40px;
-  font-family: var(--font-roboto);
-  margin-bottom: 52px;
-  text-align: center;
+  color: var(--color-text2); /* Change text color to white or a contrasting color */
+  font-size: 20px; /* Adjust font size for better readability */
+  max-width: 800px; /* Limit width of description for better layout */
+  line-height: 1.5; /* Improve readability */
+}
+
+.buttons {
+  margin-top: 30px; /* Increase space above buttons */
+}
+
+.iconContainer {
+  margin-bottom: 20px; /* Space between icon and name */
+  display: flex;
+  justify-content: center; /* Center the icon */
+  color: var(--color-text2);
 }
 
 .resumeBtn {
-  text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 100px;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 20px 26px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 12px 24px; /* Add padding to button for better touch target */
+  background-color: var(--color-accent); /* Button color */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  font-size: 18px; /* Increase font size for better visibility */
 }
 
-.heroImg {
-  width: 60%;
-  z-index: 1;
-  border-radius: 50%;
-  border: 8px solid #f2f2f2;
-  overflow: hidden;
+.resumeBtn:hover {
+  background-color: #2ECC71; /* Darken button on hover */
 }
-
-.topBlur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(140, 43, 50, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(140, 43, 50, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-.typing {
-  font-size: 45px;
-  font-weight: bolder;
-  color:black;
-  text-align: center;
-}
-
 
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column-reverse;
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+    min-height: 50vh; /* Set a minimum height for smaller screens */
+    max-height: 70vh; /* Adjust maximum height for smaller screens */
   }
 
-  .content {
-    align-items: center;
+  .title {
+    font-size: 36px; /* Decrease font size for mobile */
   }
 
-  .title,
   .description {
-    text-align: center;
+    font-size: 18px; /* Decrease description font size for mobile */
   }
 }

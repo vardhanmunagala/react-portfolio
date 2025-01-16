@@ -2,41 +2,42 @@
   {
     "title": "Market Basket Analysis",
     "imageSrc": "projects/mba.png",
-    "description": "In this project, I conducted market basket analysis using the Online Retail dataset. Through data preprocessing and analysis, I identified patterns and associations between items frequently bought together. Leveraging this insight, I created a recommendation model to propose supplementary items per transaction, aiming to enhance the shopping experience and increase overall sales.",
+    "description": "The Market Basket Analysis System is a data-driven application designed to identify purchasing patterns and correlations between products. By analyzing transaction data, the system helps businesses understand customer behavior, optimize product placement, and improve sales strategies. The project leverages data mining techniques and association rule algorithms to generate actionable insights from large datasets.",
     "skills": ["Python", "Pandas", "NumPy"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/vardhanmunagala/Market-Basket-Analysis"
   },
   {
     "title": "ToDo Application",
     "imageSrc": "projects/todo_application.png",
-    "description": "I crafted a user-friendly To-Do Application using Flask, allowing seamless task management. With HTML, CSS, and JavaScript, I ensured an intuitive interface and dynamic functionality. Utilizing SQLite for secure data storage, the app offers robust task management capabilities. Containerized the app with Docker for streamlined deployment and consistent performance.",
+    "description": "The ToDo Application is a productivity tool designed to help users efficiently organize, manage, and prioritize daily tasks. It features a user-friendly interface that enables users to create, edit, and track tasks with minimal effort, boosting personal and professional productivity.",
     "skills": ["Flask", "JavaScript", "Docker"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/vardhanmunagala/Todo_App_Flask_Docker"
   },
   {
-    "title": "Online Book Store",
+    "title": "Recipe Management System",
     "imageSrc": "projects/online_book_store.png",
-    "description": "I created an Online Book Store using Spring Boot, React, and MySQL. ava and Spring Boot managed backend tasks like user authentication, book management, and order processing, seamlessly integrated with a user-friendly React frontend. The dynamic frontend facilitated easy browsing, searching, and purchasing of books. MySQL ensured secure data storage and efficient retrieval.",
-    "skills": ["React", "SpringBoot", "MySQL"]
+    "description": "The Recipe Management System is a full-stack web application designed to simplify and enhance the process of storing, managing, and discovering recipes. It provides an intuitive interface for users to create, edit, delete, and filter recipes based on categories and keywords. This application is ideal for individuals looking to organize their culinary repertoire or share recipes with others.",
+    "skills": ["React", "SpringBoot", "MySQL"],
+    "source": "https://github.com/vardhanmunagala/Recipe-Management-System-Frontend"
   },
   {
-    "title": "Sales Performance Dashboard",
-    "imageSrc": "projects/sales_performance_dashboard.png",
-    "description": "I built a dynamic Car Sales Performance Dashboard in Tableau, featuring interactive charts for real-time updates on sales trends, revenue figures, and regional performance. Integrated with data from various sources, including CRM systems and sales databases, the dashboard offers concise insights and serves as a centralized hub for monitoring sales activities.",
-    "skills": ["Tableau", "Excel"]
-  },
-  {
-    "title": "Olympic Game Management",
+    "title": "Olympic Games",
     "imageSrc": "projects/olympics.png",
-    "description": "I built an Olympic Games Management data warehouse using AWS services like S3, Redshift, RDS, and QuickSight, integrating data from the 2016 Rio Olympics. Employing SQL queries, I extracted insights into Olympic events, results, and athlete performance. The system allows thorough data analysis and reporting, aiding event organizers and stakeholders in informed decision-making.",
+    "description": "The Olympics Game Management System project focuses on developing a centralized data warehouse to store, process, and analyze historical and ongoing data related to the Olympic Games. This system empowers stakeholders to make data-driven decisions, manage event logistics, and generate insightful analytics for improved event management and audience engagement.",
     "skills": ["Sql", "AWS S3", "Redshift"]
   },
   {
-    "title": "Walmart Sales Prediction",
+    "title": "Sales Performance",
+    "imageSrc": "projects/sales_performance_dashboard.png",
+    "description": "This project involves the creation of an interactive and visually intuitive dashboard to analyze and track sales performance across different regions, products, and time periods. The dashboard empowers business stakeholders with actionable insights, enabling data-driven decision-making to optimize sales strategies and improve revenue growth.",
+    "skills": ["Tableau", "Excel"],
+    "source": "https://github.com/vardhanmunagala/Sales-Dashboard"
+  },
+  {
+    "title": "Sales Prediction",
     "imageSrc": "projects/walmart.png",
-    "description": "In this project, predictive machine learning models were crafted to accurately forecast Walmart sales. The process involved thorough data analysis, guiding the development and refinement of highly effective predictive models. The resulting models exhibited exceptional accuracy, offering valuable forecasts to optimize sales strategies and inventory management.",
-    "skills": ["Python", "Machine Learning"]
+    "description": "The Walmart Sales Prediction project aims to forecast weekly sales across multiple Walmart stores using historical sales data. By leveraging data analytics and machine learning techniques, this project identifies key trends and contributing factors that influence sales, enabling data-driven decision-making and inventory optimization.",
+    "skills": ["Python", "Machine Learning"],
+    "source": "https://github.com/vardhanmunagala/Walmart-Store-Sales-Prediction-"
   }
 ]
