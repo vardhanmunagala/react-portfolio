@@ -73,6 +73,23 @@
     align-items: center;
   }
 
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cardContainer {
+    width: 90%;
+    max-width: 400px; /* Ensures cards don’t get too large */
+    height: auto;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
   .cardContainer {
     width: 90%; /* Ensure consistent width for all cards on small screens */
     max-width: none; /* Override any conflicting max-width */

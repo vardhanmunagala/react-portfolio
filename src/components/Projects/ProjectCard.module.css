@@ -136,9 +136,12 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    max-width: 100%; /* Ensure full width on smaller screens */
-    max-width: 90%; /* Prevent cards from becoming too wide */
-    height: auto; /* Let height adjust based on content */
+    width: 90%; /* Consistent width for all cards */
+    max-width: none; /* Override any conflicting `max-width` */
+    height: auto; /* Remove fixed height to allow content growth */
+    min-height: 200px; /* Optional: Maintain a minimum height for visual balance */
+    width: auto; /* Remove fixed height to allow content growth */
+    min-width: 300px; /* Optional: Maintain a minimum height for visual balance */
   }
 
   .image {

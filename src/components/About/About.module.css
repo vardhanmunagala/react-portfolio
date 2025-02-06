@@ -73,4 +73,8 @@
     font-size: 20px;
     padding: 25px;
   }
+
+  .aboutImage {
+    margin: 20px; /* Center the image */
+  }
 }
